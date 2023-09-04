@@ -1,0 +1,31 @@
+.container {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-block-end: 2rem;
+    }
+
+    .muscle-groups {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 1rem;
+
+        .pic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                border-radius: 50%;
+                box-shadow: 2px 2px 2px 1px #8785f5;
+            }
+        }
+
+        a {
+            color: #0ab2e6;
+            text-decoration: none;
+        }
+    }
+}

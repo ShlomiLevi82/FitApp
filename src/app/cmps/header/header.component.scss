@@ -1,0 +1,42 @@
+header {
+    height: 5rem;
+    background-color: #3a80e8;
+    font-size: 1.2em;
+
+    section {
+        margin-inline: 1rem;
+        padding-block: 1rem;
+        display: flex;
+        align-items: center;
+
+        h1.logo {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+
+            img {
+                height: 3.5rem;
+            }
+        }
+
+        nav {
+            & a {
+                text-decoration: none;
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 8px;
+                padding: 8px;
+
+                &:not(:last-child) {
+                    margin-right: 1rem;
+                }
+
+                &.active {
+                    color: #7ceb5d;
+                    border: 1px solid #41e912;
+
+                }
+            }
+        }
+    }
+}

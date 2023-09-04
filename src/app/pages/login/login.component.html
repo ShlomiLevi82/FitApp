@@ -1,0 +1,104 @@
+<section class="form-container">
+  <form name="register" class="form-block">
+    <h1>Log In</h1>
+    <div class="form-inputs">
+      <div class="loginboxspacing">
+        <h5>Username or Email</h5>
+        <input
+          class="loginTextInput1"
+          id="username"
+          type="text"
+          name="username"
+          placeholder="  Username or Email"
+        />
+      </div>
+      <div class="loginboxspacing">
+        <h5>Password</h5>
+        <input
+          class="loginTextInput1"
+          type="password"
+          name="password"
+          placeholder="  Password"
+        />
+      </div>
+      <div class="remember-forgot">
+        <label class="remembermetext"
+          >Remember Me
+          <input
+            type="checkbox"
+            name="cookieuser"
+            value="1"
+            checked="checked"
+            id="cb_cookieuser_navbar"
+            class="cb_cookieuser_navbar"
+          />
+        </label>
+        <a id="forgotpasswordlogin" href="#" target="_self">Forgot Password?</a>
+      </div>
+    </div>
+
+    <div>
+      <button>Log in</button>
+    </div>
+
+    <!-- signinwith buttons START-->
+    <div class="footer">
+      <h4>Or continue with</h4>
+      <section class="signinmethod">
+        <!-- Google button START-->
+        <div id="registersection">
+          <div class="signin-button">
+            <a href="#">
+              <img
+                class="registericon"
+                src="https://www.jefit.com/images/rg_google.svg"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- Google button END-->
+
+        <!-- FB button START-->
+        <div id="registersection">
+          <div class="signin-button">
+            <a
+              href="https://www.facebook.com/v2.5/dialog/oauth?client_id=165523163464640&amp;state=fae48cb3edaa3055310f1560985c7f89&amp;response_type=code&amp;sdk=php-sdk-5.0.0&amp;redirect_uri=https%3A%2F%2Fwww.jefit.com%2Flogin%2Ffacebook-login.php&amp;scope=email"
+            >
+              <img
+                class="registericon"
+                src="https://www.jefit.com/images/rg_fb.svg"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- FB button END-->
+
+        <!-- APPLE button START-->
+        <div id="registersection">
+          <div class="signin-button">
+            <a>
+              <img
+                id="appleid-signin"
+                class="registericon"
+                src="https://www.jefit.com/images/rg_apple.svg"
+              />
+            </a>
+          </div>
+        </div>
+        <script
+          type="text/javascript"
+          src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"
+        ></script>
+        <!-- APPLE button END-->
+      </section>
+
+      <!-- register buttons END-->
+      <div id="createaccountarea">
+        <div id="newtoalready">
+          New to FitApp?
+          <a href="signup">Create an account</a>.
+        </div>
+      </div>
+    </div>
+  </form>
+</section>
